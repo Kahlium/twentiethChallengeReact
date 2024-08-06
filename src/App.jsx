@@ -1,14 +1,12 @@
 // Todo: Bring in the required import from 'react-router-dom'
-import {  } from 'react-router-dom';
-import Nav from './components/Nav';
-import Header from './components/UI/Header'
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
 import Footer from './components/UI/Footer'
 
 function App() {
   return (
     <>
-    <Header/>
-      <Nav />
+      <Header />
         <Outlet />
         <Footer/>
     </>
