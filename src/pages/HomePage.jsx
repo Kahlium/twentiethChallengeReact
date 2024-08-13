@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// Todo: Bring in the required component from 'react-router-dom' for linking between pages
+// Bringing in the required component from 'react-router-dom' for linking between pages
 import { Link } from 'react-router-dom';
 import Profile from '../components/UI/ProfileSections/ProfileTeaser';
 import ListItem from '../components/UI/ListItem';
@@ -27,9 +27,9 @@ export default function HomePage() {
         {users.map((user) => (
           <ListItem key={user.id}>
             <Profile user={user} />
-            {/* Todo: Update this link component's to prop so that the user can click to see a single user's profile */}
+            {/* Link elements are anchors under-the-hood, but they allow the routing behavior to be controlled by the client rather than the server */}
             <Link
-              to={"/Profile"}
+              to={`/profile/${user.id}`}
               className="badge bg-primary rounded-pill"
             >
               See More
