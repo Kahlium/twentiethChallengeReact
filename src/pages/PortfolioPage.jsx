@@ -4,6 +4,6 @@ import {  } from 'react-router-dom';
 
 import API from '../utils/API';
 
-export default function ContactPage() {
+export default function PortfolioPage() {
 
 }
