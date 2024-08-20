@@ -13,6 +13,7 @@ export default function HomePage() {
         <div className='row p-2'>
           <div class="embed-responsive embed-responsive-16by9">
             <img src="https://pbs.twimg.com/media/FOzquG2X0AQuSG0?format=jpg&name=medium"></img>
+            <img src="https://pbs.twimg.com/media/FOzqucwWYAgPedo?format=jpg&name=medium"></img>
           </div>
         </div>
       </div>

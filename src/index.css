@@ -53,6 +53,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+img {
+  max-height: 400px;
+  padding: 12px;
+}
+
 .profile-footer {
   text-align: center;
   position: fixed;
