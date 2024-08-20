@@ -12,7 +12,7 @@ import ErrorPage from './pages/ErrorPage';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
-import PortfolioPage from './pages/PortfolioPage';
+import ResumePage from './pages/ResumePage';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -25,9 +25,10 @@ const router = createBrowserRouter([
         index: true,
         element: <HomePage />,
       },
+      
       {
-        path: 'portfolio',
-        element: <PortfolioPage />,
+        path: 'resume',
+        element: <ResumePage />,
       },
       {
         path: 'about',

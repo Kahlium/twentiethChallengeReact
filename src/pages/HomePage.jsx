@@ -7,36 +7,15 @@ import ListItem from '../components/UI/ListItem';
 import API from '../utils/API';
 
 export default function HomePage() {
-  // Prior to the return statement, our homepage uses a few react hooks and fetchData function to query to a mock database and retrieve random user data
-  const [users, setUsers] = useState([]);
-
-  const fetchData = async () => {
-    const { data } = await API.getUsers();
-
-    setUsers(data);
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  // Iterate over each mock user to display their abridged profile data and a link to their page
   return (
-    <div className="container pt-4">
-      <ul className="list-group list-group">
-        {users.map((user) => (
-          <ListItem key={user.id}>
-            <Profile user={user} />
-            {/* Link elements are anchors under-the-hood, but they allow the routing behavior to be controlled by the client rather than the server */}
-            <Link
-              to={`/profile/${user.id}`}
-              className="badge bg-primary rounded-pill"
-            >
-              See More
-            </Link>
-          </ListItem>
-        ))}
-      </ul>
-    </div>
+    <section className="features-icons bg-light text-center m-4">
+      <div className='container'>
+        <div className='row p-2'>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://pbs.twimg.com/media/FOzquG2X0AQuSG0?format=jpg&name=medium"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
