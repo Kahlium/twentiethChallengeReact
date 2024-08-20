@@ -5,5 +5,11 @@ import {  } from 'react-router-dom';
 import API from '../utils/API';
 
 export default function ContactPage() {
+    
+    return (
+        <section className="features-icons bg-light text-center m-4">
+         
+        </section>
+      );
 
 }

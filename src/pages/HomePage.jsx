@@ -12,7 +12,7 @@ export default function HomePage() {
       <div className='container'>
         <div className='row p-2'>
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://pbs.twimg.com/media/FOzquG2X0AQuSG0?format=jpg&name=medium"></iframe>
+            <img src="https://pbs.twimg.com/media/FOzquG2X0AQuSG0?format=jpg&name=medium"></img>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <footer>Footer</footer>
+      <footer>Karen Gutierrez</footer>
     );
   }
   
